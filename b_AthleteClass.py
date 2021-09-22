@@ -17,6 +17,9 @@ class Athlete:
 
 
 class Football_Player(Athlete):
+# inherites athelte traist but also adds more traits-- 
+#position, team --> need 5 traits to create a player
+# 3 for "athelete, 2 more for football player"
 
     def __init__(self,ht,wt,bodyfat,position,team):
 
@@ -24,7 +27,8 @@ class Football_Player(Athlete):
 
         self.__position = position
         self.__team = team
-
+# only need two get clauses because they are accessed in the 
+#super clause
 
     def get_position(self):
         return self.__position
